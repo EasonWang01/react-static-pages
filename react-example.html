@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.6/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<script>
+var a;
+var btnn;
+</script>
+  </head>
+  <body>
+    <div id="example"></div>
+	
+	<button onclick=" ReactDOM.render(
+        btnn,
+        document.getElementById('example')
+      );"/>
+    <script type="text/babel">
+	
+		 var Btn = React.createClass({
+
+        render: function() {
+		
+          return <div> <iframe width="426" height="240" src="https://www.youtube.com/embed/maTP315XZCQ" frameborder="0" allowfullscreen></iframe>
+          <iframe width="426" height="240" src="https://www.youtube.com/embed/8lio-3L43EU" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+        }
+      });
+	
+	//////////////////////
+      var HelloMessage = React.createClass({
+        render: function() {
+          return <div><h1>Hello </h1><h1>Hello </h1></div>;
+        }
+      });
+
+//////////////////////
+
+            btnn   =  <Btn  /> ;
+
+
+      ReactDOM.render(
+        <HelloMessage  />,
+        document.getElementById('example')
+      );
+
+    </script>
+  </body>
+</html>
